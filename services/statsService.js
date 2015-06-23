@@ -28,15 +28,4 @@ module.exports = {
       return dfd.promise; 
   }
 
-  getDataByDay: function(req, res){
-    var dfd = q.defer();
-    Customer
-    .find()
-    .where()
-    .exec(function(err, customers){
-      dfd.resolve(customers);
-    })
-    return dfd.promise;
-  }
-
 }
